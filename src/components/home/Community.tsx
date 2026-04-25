@@ -42,7 +42,7 @@ export default function Community() {
   }, [])
 
   return (
-    <section className="bg-cream py-16 md:py-20 overflow-hidden">
+    <section className="bg-[var(--bg-primary)] py-16 md:py-20 overflow-hidden">
       <h2 className="text-3xl md:text-4xl font-extrabold text-[var(--text-primary)] text-center mb-8 md:mb-12 px-6">
         {t('community.title')}
       </h2>

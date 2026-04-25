@@ -22,7 +22,7 @@ export default function Button({
     primary:
       'bg-[var(--green-dark)] text-white hover:opacity-90 hover:-translate-y-0.5',
     outline:
-      'bg-transparent border-2 border-[var(--text-primary)] text-[var(--text-primary)] hover:bg-[var(--text-primary)] hover:text-white',
+      'bg-transparent border-2 border-[#2d4a2d] text-[#2d4a2d] dark:border-[#4a8a4a] dark:text-[#4a8a4a] hover:bg-[#2d4a2d] hover:text-white dark:hover:bg-[#4a8a4a] dark:hover:text-white',
   }
 
   return (

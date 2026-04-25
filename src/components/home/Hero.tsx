@@ -59,7 +59,9 @@ export default function Hero() {
 
       <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-4 md:mb-5 w-full px-6 sm:px-0">
         <Button className="w-full sm:w-auto">{t('hero.cta')} →</Button>
-        <Button variant="outline" className="w-full sm:w-auto">{t('hero.ctaSecondary')}</Button>
+        <Button variant="outline" className="w-full sm:w-auto border-green-dark text-green-dark hover:bg-green-dark hover:text-white">
+          {t('hero.ctaSecondary')}
+        </Button>
       </div>
 
       <p className="relative z-10 text-xs text-[var(--text-muted)]">{t('hero.sub')}</p>
