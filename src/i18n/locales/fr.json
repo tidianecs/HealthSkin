@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "getStarted": "Commencer"
+  },
+  "hero": {
+    "badge": "100% skincare naturelle · de l'intérieur et l'extérieur",
+    "title1": "Rayonne naturellement avec des",
+    "titleHighlight": "recettes",
+    "title2": "faites pour toi",
+    "subtitle": "HealthSkin crée des boissons, repas et routines skincare DIY personnalisés selon ton type de peau, tes objectifs et ton mode de vie.",
+    "cta": "Commencer l'essai gratuit",
+    "ctaSecondary": "Voir comment ça marche",
+    "sub": "7 jours d'essai gratuit · 47$/mois · Annulez à tout moment"
+  },
+  "stats": {
+    "recipes": "Recettes naturelles",
+    "challenges": "Challenges",
+    "groups": "Groupes communautaires",
+    "natural": "Ingrédients naturels"
+  },
+  "howItWorks": {
+    "title": "Comment ça marche",
+    "step1Title": "Parlez-nous de votre peau",
+    "step1Desc": "Quiz rapide de 3 min sur votre type de peau, vos objectifs et votre alimentation",
+    "step2Title": "Recevez votre plan personnalisé",
+    "step2Desc": "Obtenez 100+ recettes, routines & conseils skincare adaptés à votre profil.",
+    "step3Title": "Suivez votre routine glow",
+    "step3Desc": "Routines quotidiennes matin, midi & soir adaptées pour vous"
+  },
+  "dep": {
+    "title": "Boire · Manger · Appliquer",
+    "drink": "Buvez votre Skincare",
+    "drinkDesc": "Smoothies & jus hydratants riches en vitamines pour la peau. Mélanges antioxydants pour un teint lumineux.",
+    "eat": "Mangez votre Skincare",
+    "eatDesc": "Aliments complets & recettes formulés pour la santé de la peau. Des repas riches en collagène aux bols anti-inflammatoires.",
+    "put": "Appliquez votre Skincare",
+    "putDesc": "Masques DIY, sérums & traitements 100% naturels. Routines de 10 min qui fonctionnent vraiment."
+  },
+  "features": {
+    "title": "Tout ce dont vous avez besoin pour une peau naturellement plus saine",
+    "f1": "100+ recettes personnalisées : boissons, repas & masques",
+    "f2": "Routine skincare hebdomadaire sur 7 jours, générée automatiquement",
+    "f3": "Correspondance intelligente des ingrédients selon vos allergies",
+    "f4": "Défis quotidiens pour construire des habitudes durables",
+    "f5": "Suivi du score de peau pour surveiller vos progrès",
+    "f6": "Communauté de passionnés de skincare comme vous",
+    "cta": "Commencer l'essai gratuit"
+  },
+  "testimonials": {
+    "title": "Adoré par des milliers",
+    "subtitle": "Témoignages réels d'utilisateurs HealthSkin"
+  },
+  "community": {
+    "title": "De notre communauté"
+  },
+  "footer": {
+    "tagline": "Buvez votre Skincare. Mangez votre Skincare. Appliquez votre Skincare.",
+    "rights": "© 2024 HealthSkin. Tous droits réservés."
+  },
+  "stats": {
+    "happyUsers": "4.9 · 2 400+ utilisateurs satisfaits",
+    "recipes": "Recettes naturelles"
+    }
+}

@@ -1,0 +1,64 @@
+{
+  "nav": {
+    "getStarted": "Get started"
+  },
+  "hero": {
+    "badge": "100% natural skincare · inside & out",
+    "title1": "Glow naturally with",
+    "titleHighlight": "recipes",
+    "title2": "made for you",
+    "subtitle": "HealthSkin creates personalized drinks, meals and DIY skincare routines based on your skin type, goals and lifestyle.",
+    "cta": "Start your free trial",
+    "ctaSecondary": "See how it works",
+    "sub": "7-day free trial · $47/month · Cancel anytime"
+  },
+  "stats": {
+    "recipes": "Natural recipes",
+    "challenges": "Challenges",
+    "groups": "Community groups",
+    "natural": "Natural ingredients"
+  },
+  "howItWorks": {
+    "title": "How it works",
+    "step1Title": "Tell us about your skin",
+    "step1Desc": "Quick 3-min quiz about your skin type, goals and diet",
+    "step2Title": "Receive your personalized plan",
+    "step2Desc": "Get 100+ recipes, routines & skincare tips tailored to your profile.",
+    "step3Title": "Follow your glow routine",
+    "step3Desc": "Daily morning, midday & evening routines tailored for you"
+  },
+  "dep": {
+    "title": "Drink · Eat · Put",
+    "drink": "Drink Your Skincare",
+    "drinkDesc": "Hydrating smoothies & juices packed with skin-boosting vitamins. Antioxidant blends for a dewy, plump complexion from within.",
+    "eat": "Eat Your Skincare",
+    "eatDesc": "Whole foods & recipes formulated for skin health. From collagen-rich meals to anti-inflammatory bowls.",
+    "put": "Put On Your Skincare",
+    "putDesc": "DIY masks, serums & treatments using 100% natural ingredients. Quick 10-min routines that actually work."
+  },
+  "features": {
+    "title": "Everything you need for naturally healthier skin",
+    "f1": "100+ personalized recipes: drinks, meals & masks",
+    "f2": "7-day weekly skincare routine, auto-generated",
+    "f3": "Smart ingredient matching based on your allergies",
+    "f4": "Daily challenges to build lasting habits",
+    "f5": "Skin score tracking to monitor your progress",
+    "f6": "Community of skin lovers just like you",
+    "cta": "Start your free trial"
+  },
+  "testimonials": {
+    "title": "Loved by thousands",
+    "subtitle": "Real stories from real HealthSkin users"
+  },
+  "community": {
+    "title": "From our community"
+  },
+  "footer": {
+    "tagline": "Drink Your Skincare. Eat Your Skincare. Put On Your Skincare.",
+    "rights": "© 2024 HealthSkin. All rights reserved."
+  },
+  "stats": {
+    "happyUsers": "4.9 · 2,400+ happy users",
+    "recipes": "Natural recipes"
+    }
+}

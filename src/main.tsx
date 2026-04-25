@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+// src/main.tsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App'
+import './i18n'
 import './index.css'
-import App from './App.tsx'
+import { initTheme } from './core/theme'
 
-createRoot(document.getElementById('root')!).render(
-  <StrictMode>
+initTheme() // applique le dark mode AVANT le premier render
+
+ReactDOM.createRoot(document.getElementById('root')!).render(
+  <React.StrictMode>
     <App />
-  </StrictMode>,
+  </React.StrictMode>
 )
