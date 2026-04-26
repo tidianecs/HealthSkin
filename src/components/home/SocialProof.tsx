@@ -7,7 +7,12 @@ const STATS = [
   { key: 'natural',    value: '100%', color: '#e8efc4' },
 ] as const
 
-const AVATARS = ['👩🏽', '👩🏾', '👩🏿', '👩🏻']
+const AVATARS = [
+  'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80',
+  'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=100&q=80',
+  'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80',
+  'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80',
+] as const
 
 export default function SocialProof() {
   const { t } = useTranslation()
@@ -18,13 +23,13 @@ export default function SocialProof() {
       <div className="flex items-center gap-4">
         <div className="flex">
           {AVATARS.map((a, i) => (
-            <div
+            <img
               key={i}
-              className="flex h-9 w-9 md:h-10 md:w-10 items-center justify-center rounded-full border-2 border-white text-base md:text-lg"
-              style={{ marginLeft: i === 0 ? 0 : '-10px', background: '#f0d9c0' }}
-            >
-              {a}
-            </div>
+              src={a}
+              alt="user"
+              className="h-9 w-9 md:h-10 md:w-10 rounded-full border-2 border-white object-cover"
+              style={{ marginLeft: i === 0 ? 0 : '-10px' }}
+            />
           ))}
         </div>
         <div>

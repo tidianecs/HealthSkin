@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 
 const REVIEWS = [
-  { text: "I was skeptical about DIY skincare but the avocado mask recipe changed my mind completely. My skin feels so hydrated.", name: 'Marcia T.', skin: 'Oily skin', avatar: '👩🏽' },
-  { text: "I have eczema-prone skin and the allergy-aware ingredient matching gave me so much peace of mind. Zero reactions.", name: 'Naomi L.', skin: 'Sensitive skin', avatar: '👩🏻' },
-  { text: "The personalized routine is exactly what I needed. I stopped wasting money on products that don't work for my skin type.", name: 'Sophie L.', skin: 'Combination skin', avatar: '👩🏼' },
-  { text: "J'adore les recettes smoothies ! Ma peau est visiblement plus lumineuse après seulement 2 semaines.", name: 'Amina D.', skin: 'Dry skin', avatar: '👩🏾' },
-  { text: "The DIY masks are incredible. I replaced my entire skincare routine with HealthSkin recipes and my skin has never looked better.", name: 'Priya K.', skin: 'Normal skin', avatar: '👩🏿' },
-  { text: "Finally a platform that understands that what you eat affects your skin. The meal plans are delicious and my skin shows it.", name: 'Clara M.', skin: 'Acne-prone skin', avatar: '👩🏻' },
-  { text: "I've tried every skincare brand out there. Nothing worked until I started following my HealthSkin routine. Game changer.", name: 'Rita F.', skin: 'Oily skin', avatar: '👩🏽' },
-  { text: "The morning routine takes only 10 minutes and my colleagues keep asking what I'm doing differently. Love it!", name: 'Sara B.', skin: 'Combination skin', avatar: '👩🏼' },
+  { text: "I was skeptical about DIY skincare but the avocado mask recipe changed my mind completely. My skin feels so hydrated.", name: 'Marcia T.', skin: 'Oily skin', avatar: 'https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?w=100&q=80' },
+  { text: "I have eczema-prone skin and the allergy-aware ingredient matching gave me so much peace of mind. Zero reactions.", name: 'Naomi L.', skin: 'Sensitive skin', avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&q=80' },
+  { text: "The personalized routine is exactly what I needed. I stopped wasting money on products that don't work for my skin type.", name: 'Sophie L.', skin: 'Combination skin', avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&q=80' },
+  { text: "J'adore les recettes smoothies ! Ma peau est visiblement plus lumineuse après seulement 2 semaines.", name: 'Amina D.', skin: 'Dry skin', avatar: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100&q=80' },
+  { text: "The DIY masks are incredible. I replaced my entire skincare routine with HealthSkin recipes and my skin has never looked better.", name: 'Priya K.', skin: 'Normal skin', avatar: 'https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?w=100&q=80' },
+  { text: "Finally a platform that understands that what you eat affects your skin. The meal plans are delicious and my skin shows it.", name: 'Clara M.', skin: 'Acne-prone skin', avatar: 'https://images.unsplash.com/photo-1524504388940-b1c1722653e1?w=100&q=80' },
+  { text: "I've tried every skincare brand out there. Nothing worked until I started following my HealthSkin routine. Game changer.", name: 'Rita F.', skin: 'Oily skin', avatar: 'https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?w=100&q=80' },
+  { text: "The morning routine takes only 10 minutes and my colleagues keep asking what I'm doing differently. Love it!", name: 'Theo B.', skin: 'Combination skin', avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&q=80' },
 ] as const
 
 export default function Testimonials() {
@@ -41,9 +41,11 @@ export default function Testimonials() {
           "{review.text}"
         </p>
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 md:w-11 md:h-11 rounded-full flex items-center justify-center text-xl md:text-2xl bg-[#f0d9c0]">
-            {review.avatar}
-          </div>
+          <img
+            src={review.avatar}
+            alt={review.name}
+            className="w-10 h-10 md:w-11 md:h-11 rounded-full object-cover flex-shrink-0"
+          />
           <div>
             <div className="text-sm font-bold text-[var(--text-primary)]">{review.name}</div>
             <div className="text-xs text-[var(--text-muted)]">{review.skin}</div>
