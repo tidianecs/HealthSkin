@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import { useEffect, useState } from 'react'
 import { theme } from '../../core/theme'
+import { useNavigate } from 'react-router-dom'
 import Button from '../ui/Button'
 
 const LANGS = ['fr', 'en'] as const
@@ -8,6 +9,7 @@ const LANGS = ['fr', 'en'] as const
 export default function Navbar() {
   const { t, i18n } = useTranslation()
   const { isDark, toggle } = theme()
+  const navigate = useNavigate()
 
   const [visible, setVisible] = useState(true)
   const [lastY, setLastY] = useState(0)
@@ -67,7 +69,7 @@ export default function Navbar() {
           {isDark ? '☀️' : '🌙'}
         </button>
 
-        <Button className="text-xs md:text-sm px-4 md:px-7 py-2.5 md:py-3.5">
+        <Button className="text-xs md:text-sm px-4 md:px-7 py-2.5 md:py-3.5" onClick={() => navigate('/auth')}>
           {t('nav.getStarted')}
         </Button>
       </div>
