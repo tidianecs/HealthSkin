@@ -20,7 +20,7 @@ export default function Hero() {
       {EMOJIS.map(({ emoji, style }) => (
         <span
           key={emoji}
-          className="pointer-events-none absolute select-none text-2xl md:text-4xl opacity-70 hidden sm:block"
+          className="pointer-events-none absolute select-none text-2xl md:text-4xl opacity-70"
           style={{ ...style, animation: 'float 3s ease-in-out infinite' }}
         >
           {emoji}
