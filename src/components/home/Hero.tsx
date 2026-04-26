@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next'
 import Button from '../ui/Button'
 import Badge from '../ui/Badge'
+import { useNavigate } from 'react-router-dom'
 
 const EMOJIS = [
   { emoji: '🍋', style: { top: '15%', left: '6%',      animationDelay: '0s'   } },
@@ -13,6 +14,7 @@ const EMOJIS = [
 
 export default function Hero() {
   const { t } = useTranslation()
+  const navigate = useNavigate()
 
   return (
     <section className="relative overflow-hidden bg-cream px-6 md:px-12 py-16 md:py-24 text-center flex flex-col items-center justify-center min-h-[480px] md:min-h-[520px]">
@@ -58,7 +60,7 @@ export default function Hero() {
       </p>
 
       <div className="relative z-10 flex flex-col sm:flex-row items-center justify-center gap-3 md:gap-4 mb-4 md:mb-5 w-full px-6 sm:px-0">
-        <Button className="w-full sm:w-auto">{t('hero.cta')} →</Button>
+        <Button className="w-full sm:w-auto" onClick={() => navigate('/auth')}>{t('hero.cta')} →</Button>
         <Button variant="outline" className="w-full sm:w-auto border-green-dark text-green-dark hover:bg-green-dark hover:text-white">
           {t('hero.ctaSecondary')}
         </Button>
