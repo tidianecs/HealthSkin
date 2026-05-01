@@ -2,22 +2,21 @@ import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import { supabase } from './lib/supabase'
 import type { Session } from '@supabase/supabase-js'
-import Home from './pages/Home'
-import Auth from './pages/Auth'
-import Dashboard from './pages/Dashboard'
+import Home       from './pages/Home'
+import Auth       from './pages/Auth'
+import Onboarding from './pages/Onboarding'
+import Dashboard  from './pages/Dashboard'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Récupère la session actuelle
     supabase.auth.getSession().then(({ data: { session } }) => {
       setSession(session)
       setLoading(false)
     })
 
-    // Écoute les changements (login, logout, email confirmed)
     const { data: { subscription } } = supabase.auth.onAuthStateChange((_event, session) => {
       setSession(session)
     })
@@ -33,17 +32,59 @@ export default function App() {
     )
   }
 
+  // true seulement si le champ existe ET est explicitement true
+  const onboardingDone = session?.user?.user_metadata?.onboarding_complete === true
+
   return (
     <BrowserRouter>
       <Routes>
+        {/* Public */}
         <Route path="/" element={<Home />} />
+
+        {/* Auth — si déjà connecté, redirige selon onboarding */}
         <Route
           path="/auth"
-          element={session ? <Navigate to="/dashboard" replace /> : <Auth />}
+          element={
+            !session
+              ? <Auth />
+              : onboardingDone
+                ? <Navigate to="/dashboard" replace />
+                : <Navigate to="/onboarding" replace />
+          }
         />
+
+        {/* Onboarding — seulement si connecté ET onboarding pas fait */}
+        <Route
+          path="/onboarding"
+          element={
+            !session
+              ? <Navigate to="/auth" replace />
+              : onboardingDone
+                ? <Navigate to="/dashboard" replace />
+                : <Onboarding />
+          }
+        />
+
+        {/* Dashboard — seulement si connecté ET onboarding fait */}
         <Route
           path="/dashboard"
-          element={session ? <Dashboard /> : <Navigate to="/auth" replace />}
+          element={
+            !session
+              ? <Navigate to="/auth" replace />
+              : !onboardingDone
+                ? <Navigate to="/onboarding" replace />
+                : <Dashboard />
+          }
+        />
+
+        {/* Scan — après onboarding */}
+        <Route
+          path="/scan"
+          element={
+            !session
+              ? <Navigate to="/auth" replace />
+              : <Dashboard />
+          }
         />
       </Routes>
     </BrowserRouter>
