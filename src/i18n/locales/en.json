@@ -60,5 +60,186 @@
   "stats": {
     "happyUsers": "4.9 · 2,400+ happy users",
     "recipes": "Natural recipes"
-    }
+  },
+  "onboarding": {
+    "language": {
+      "title": "Choose your language",
+      "subtitle": "You can change this later in Settings"
+    },
+    "welcome": {
+      "title": "Welcome to HealthSkin",
+      "subtitle": "In a few minutes, we'll create your personalized skin & nutrition routine — tailored to your skin type, goals, and allergies.",
+      "photoLabel": "Profile photo",
+      "photoHint": "Required — visible on your profile",
+      "photoAdd": "Add photo",
+      "photoError": "Please add a photo to continue",
+      "privacy": "Your data is private and never shared.",
+      "cards": {
+        "profile": "Your profile", "profileSub": "Age, tone, climate",
+        "skin": "Your skin", "skinSub": "Type & concerns",
+        "goals": "Your goals", "goalsSub": "What you want to achieve",
+        "diet": "Diet & allergies", "dietSub": "Habits & safety"
+      }
+    },
+    "profile": {
+      "title": "Tell us about yourself",
+      "subtitle": "This information personalizes your experience",
+      "ageLabel": "Age range",
+      "sexLabel": "Biological sex",
+      "toneLabel": "Natural skin tone",
+      "toneHint": "Helps us choose the best ingredients for you",
+      "climateLabel": "Climate",
+      "climateHint": "Your environment greatly influences your skin's needs",
+      "ages": ["Under 18", "18–24", "25–34", "35–44", "45+"],
+      "sexes": ["Female", "Male", "Prefer not to say"],
+      "tones": [
+        { "label": "Very fair",  "sub": "Burns easily, rarely tans"     },
+        { "label": "Fair",       "sub": "Sometimes burns, tans lightly" },
+        { "label": "Medium",     "sub": "Rarely burns, tans easily"     },
+        { "label": "Tan",        "sub": "Tans very easily"              },
+        { "label": "Deep",       "sub": "Almost never burns"            }
+      ],
+      "climates": [
+        { "label": "Dry",        "sub": "Low humidity — desert, continental"       },
+        { "label": "Humid",      "sub": "High humidity — tropical or subtropical"  },
+        { "label": "Temperate",  "sub": "Mild seasons, moderate humidity"          },
+        { "label": "Tropical",   "sub": "Hot and humid year-round"                 },
+        { "label": "Cold",       "sub": "Cold winters, low humidity"               }
+      ]
+    },
+    "skin": {
+      "title": "Your current skin",
+      "subtitle": "Be honest — no judgment here!",
+      "hint": "Think about how your skin feels 15–20 minutes after washing your face, without applying any cream or moisturizer.",
+      "feelingLabel": "How does your skin feel after washing?",
+      "feelingHint": "Wait 15–20 min after cleansing, no moisturizer, then observe.",
+      "feelings": [
+        { "label": "Tight & dry",            "sub": "Your skin feels tight, uncomfortable, or starts to flake. This usually means dry skin."                                          },
+        { "label": "Comfortable & balanced", "sub": "Your skin feels just right — not dry, not oily. This usually means normal skin."                                               },
+        { "label": "Shiny within 1 hour",    "sub": "Your whole face becomes shiny and greasy within about an hour. This usually means oily skin."                                  },
+        { "label": "Oily T-zone only",       "sub": "Your forehead and nose get oily, but your cheeks stay normal or dry. This usually means combination skin."                     },
+        { "label": "Sensitive & reactive",   "sub": "Your skin often feels irritated, red, or itchy after washing — even with gentle products."                                     }
+      ],
+      "concernsLabel": "Current concerns",
+      "concernsHint": "Select all that apply — it's normal to have several at once",
+      "concerns": ["Acne", "Blackheads", "Redness", "Dark spots", "Enlarged pores", "Dullness / uneven tone", "Excess oil", "Fine lines & wrinkles", "Dark circles", "None", "Other"],
+      "sensitivityLabel": "Skin sensitivity",
+      "sensitivityHint": "Does your skin react easily to products, climate changes, or stress?",
+      "sensitivities": [
+        { "label": "Yes — I have sensitive skin", "sub": "My skin often reacts: redness, itching, burning, or breakouts from products" },
+        { "label": "Sometimes",                   "sub": "I occasionally react to certain products or environmental changes"            },
+        { "label": "Rarely",                      "sub": "I rarely have reactions — only with very harsh products"                     },
+        { "label": "No — my skin is resilient",  "sub": "My skin tolerates most products and conditions well"                          }
+      ]
+    },
+    "goals": {
+      "title": "Your skin goals",
+      "subtitle": "What do you want to improve?",
+      "hint": "Choose all that apply — most people have 2 or 3 goals at the same time. There is no wrong answer.",
+      "goalsLabel": "What are your main goals?",
+      "goals": ["Hydrate", "Reduce acne", "Even tone", "Reduce dark spots", "Calm irritation", "Natural glow", "Anti-aging", "Clear pores", "Other"],
+      "timelineLabel": "When do you expect results?",
+      "timelineHint": "Natural skincare takes consistency. Be realistic — the longer your commitment, the deeper the results.",
+      "timelines": [
+        { "label": "2 weeks",              "sub": "Quick wins — visible hydration & first glow"                  },
+        { "label": "1 month",              "sub": "Noticeable improvement in texture and radiance"               },
+        { "label": "3 months",             "sub": "Real transformation with a consistent routine"                },
+        { "label": "Long-term (6+ months)","sub": "Lasting habits for permanently healthier skin"               }
+      ]
+    },
+    "routine": {
+      "title": "Your current routine",
+      "subtitle": "Let's see where you're starting from",
+      "hint": "No need to be perfect — we will build from where you are now.",
+      "waterLabel": "How much water do you drink per day?",
+      "waterHint": "Hydration is the #1 beauty supplement — it directly affects skin glow and firmness",
+      "water": [
+        { "label": "<1L",     "sub": "Less than 1 litre — quite low for skin health"  },
+        { "label": "1–1.5L",  "sub": "1 to 1.5 litres — moderate, room to improve"   },
+        { "label": "1.5–2L",  "sub": "1.5 to 2 litres — good daily hydration"        },
+        { "label": ">2L",     "sub": "More than 2 litres — excellent for skin"        }
+      ],
+      "exfoliationLabel": "How often do you exfoliate?",
+      "exfoliationHint": "Exfoliation removes dead skin cells and helps active ingredients absorb better",
+      "exfoliation": [
+        { "label": "Never",                  "sub": "I don't currently exfoliate — starting fresh"             },
+        { "label": "Once a week",            "sub": "A light weekly routine"                                   },
+        { "label": "Twice a week",           "sub": "A solid regular exfoliation habit"                       },
+        { "label": "3 or more times a week", "sub": "Frequent exfoliation — we'll monitor for over-stripping" }
+      ],
+      "naturalLabel": "Do you currently use natural skincare?",
+      "naturalHint": "Natural or DIY products made from plants, fruits, oils, or clays",
+      "natural": [
+        { "label": "Yes, regularly", "sub": "I use natural or DIY products most days"                },
+        { "label": "Sometimes",      "sub": "I mix natural and conventional products"                },
+        { "label": "Not yet",        "sub": "I've never tried natural skincare — I'm starting now"  }
+      ]
+    },
+    "diet": {
+      "title": "Diet & hydration",
+      "subtitle": "What you eat and drink directly affects your skin",
+      "hint": "Your skin reflects your diet. This helps us suggest recipes that complement your lifestyle and improve your glow from the inside.",
+      "dietLabel": "How would you describe your diet?",
+      "dietHint": "Select all that apply",
+      "diet": ["Mostly fruits & veggies", "Balanced & varied", "High sugar", "High dairy", "Fast food often", "Vegan", "Vegetarian", "Other"],
+      "drinksLabel": "What do you usually drink?",
+      "drinksHint": "Select all that apply — be honest, this helps us personalize your routine",
+      "drinks": ["Water", "Tea / herbal infusions", "Fresh juices", "Coffee", "Sugary drinks / sodas", "Alcohol", "Smoothies", "Other"],
+      "allergiesLabel": "Do you have any known food allergies or intolerances?",
+      "allergiesHint": "We will exclude those ingredients from all your recipes and routines",
+      "yes": "Yes", "no": "No",
+      "digestionLabel": "Do you have digestive issues?",
+      "digestionHint": "Gut health and skin health are closely connected — bloating and poor digestion often show up on the skin",
+      "digestion": [
+        { "label": "Yes",       "sub": "Regular bloating, IBS, constipation, or digestive pain" },
+        { "label": "Sometimes", "sub": "Occasional discomfort after certain meals"              },
+        { "label": "No",        "sub": "My digestion is generally comfortable and regular"      }
+      ]
+    },
+    "safety": {
+      "title": "Safety check",
+      "subtitle": "A few important questions to keep you safe",
+      "warning": "This app is for wellness & educational purposes — not medical advice. Always consult a healthcare professional for medical concerns.",
+      "pregnantLabel": "Are you currently pregnant or breastfeeding?",
+      "pregnantHint": "Some natural ingredients (e.g. essential oils, high-dose herbs) may need to be avoided during pregnancy.",
+      "pregnant": [
+        { "label": "Yes — I am pregnant or breastfeeding" },
+        { "label": "No" }
+      ],
+      "reactionLabel": "Have you ever had a reaction to natural cosmetics?",
+      "reactionHint": "This helps us flag high-risk ingredients in your recipes",
+      "reactions": [
+        { "label": "Yes — I've reacted to natural ingredients before", "sub": "We'll add safety flags to high-risk ingredients in your recipes" },
+        { "label": "No — I've never had a reaction",                   "sub": "We'll still include patch-test reminders for new recipes"        }
+      ]
+    },
+    "commitment": {
+      "title": "Your commitment",
+      "subtitle": "Help us set the right pace for you",
+      "hint": "Be realistic — a routine you can stick to every day is far more powerful than a perfect routine you abandon after 1 week.",
+      "timeLabel": "How much time can you dedicate per day?",
+      "timeHint": "Even 5 minutes is enough with daily consistency",
+      "time": [
+        { "label": "5 min / day",   "sub": "Quick — one simple action per session (e.g. a smoothie or a mask rinse)" },
+        { "label": "10 min / day",  "sub": "Light routine — 2 to 3 simple steps"                                     },
+        { "label": "20 min / day",  "sub": "Solid routine — prep, apply, and rinse"                                  },
+        { "label": "30+ min / day", "sub": "Full ritual — all steps with care and intention"                         }
+      ],
+      "complexityLabel": "What recipe complexity do you prefer?",
+      "complexityHint": "This determines how elaborate your weekly plan will be",
+      "complexity": [
+        { "label": "Simple",      "sub": "2–3 ingredients max, under 5 minutes to prepare"                          },
+        { "label": "Elaborate",   "sub": "I enjoy the process — more ingredients and steps are fine"                },
+        { "label": "Mix of both", "sub": "Quick recipes on weekdays, more elaborate on weekends"                    }
+      ],
+      "remindersLabel": "Enable daily routine reminders?",
+      "remindersHint": "We'll send gentle nudges at morning, midday, and evening to keep you on track",
+      "reminders": [
+        { "label": "Yes, remind me", "sub": "Morning, midday, and evening gentle notifications" },
+        { "label": "No thanks",      "sub": "I'll check the app on my own"                     }
+      ]
+    },
+    "continue": "Continue",
+    "back": "Back"
+  }
 }

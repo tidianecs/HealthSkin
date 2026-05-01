@@ -60,5 +60,186 @@
   "stats": {
     "happyUsers": "4.9 · 2 400+ utilisateurs satisfaits",
     "recipes": "Recettes naturelles"
-    }
+  },
+  "onboarding": {
+    "language": {
+      "title": "Choisissez votre langue",
+      "subtitle": "Vous pouvez modifier cela plus tard dans les Paramètres"
+    },
+    "welcome": {
+      "title": "Bienvenue sur HealthSkin",
+      "subtitle": "En quelques minutes, nous allons créer votre routine skincare & nutrition personnalisée — adaptée à votre type de peau, vos objectifs et vos allergies.",
+      "photoLabel": "Photo de profil",
+      "photoHint": "Obligatoire — visible sur votre profil",
+      "photoAdd": "Ajouter une photo",
+      "photoError": "Veuillez ajouter une photo pour continuer",
+      "privacy": "Vos données sont privées et ne sont jamais partagées.",
+      "cards": {
+        "profile": "Votre profil", "profileSub": "Âge, teint, climat",
+        "skin": "Votre peau", "skinSub": "Type & préoccupations",
+        "goals": "Vos objectifs", "goalsSub": "Ce que vous souhaitez améliorer",
+        "diet": "Alimentation & allergies", "dietSub": "Habitudes & sécurité"
+      }
+    },
+    "profile": {
+      "title": "Parlez-nous de vous",
+      "subtitle": "Ces informations personnalisent votre expérience",
+      "ageLabel": "Tranche d'âge",
+      "sexLabel": "Sexe biologique",
+      "toneLabel": "Teint naturel",
+      "toneHint": "Nous aide à choisir les meilleurs ingrédients pour vous",
+      "climateLabel": "Climat",
+      "climateHint": "Votre environnement influence grandement les besoins de votre peau",
+      "ages": ["Moins de 18 ans", "18–24", "25–34", "35–44", "45+"],
+      "sexes": ["Femme", "Homme", "Préfère ne pas répondre"],
+      "tones": [
+        { "label": "Très clair",  "sub": "Brûle facilement, bronze rarement"     },
+        { "label": "Clair",       "sub": "Brûle parfois, bronze légèrement"      },
+        { "label": "Moyen",       "sub": "Brûle rarement, bronze facilement"     },
+        { "label": "Doré",        "sub": "Bronze très facilement"                },
+        { "label": "Foncé",       "sub": "Ne brûle presque jamais"               }
+      ],
+      "climates": [
+        { "label": "Sec",          "sub": "Faible humidité — désert, continental"       },
+        { "label": "Humide",       "sub": "Forte humidité — tropical ou subtropical"    },
+        { "label": "Tempéré",      "sub": "Saisons douces, humidité modérée"            },
+        { "label": "Tropical",     "sub": "Chaud et humide toute l'année"              },
+        { "label": "Froid",        "sub": "Hivers froids, faible humidité"             }
+      ]
+    },
+    "skin": {
+      "title": "Votre peau actuelle",
+      "subtitle": "Soyez honnête — sans jugement !",
+      "hint": "Pensez à la façon dont votre peau se sent 15–20 minutes après vous être lavé le visage, sans appliquer de crème ni d'hydratant.",
+      "feelingLabel": "Comment votre peau se sent-elle après le lavage ?",
+      "feelingHint": "Attendez 15–20 min après le nettoyage, sans hydratant, puis observez.",
+      "feelings": [
+        { "label": "Tendue & sèche",          "sub": "Votre peau semble tendue, inconfortable ou commence à peler. Cela signifie généralement une peau sèche."                           },
+        { "label": "Confortable & équilibrée","sub": "Votre peau se sent bien — ni sèche, ni grasse. Cela signifie généralement une peau normale."                                      },
+        { "label": "Brillante en 1 heure",    "sub": "Votre visage devient brillant et gras en environ une heure. Cela signifie généralement une peau grasse."                         },
+        { "label": "Zone T grasse seulement", "sub": "Votre front et votre nez deviennent gras, mais vos joues restent normales ou sèches. Cela signifie généralement une peau mixte." },
+        { "label": "Sensible & réactive",     "sub": "Votre peau est souvent irritée, rouge ou qui gratte après le lavage — même avec des produits doux."                              }
+      ],
+      "concernsLabel": "Préoccupations actuelles",
+      "concernsHint": "Sélectionnez tout ce qui s'applique — il est normal d'en avoir plusieurs",
+      "concerns": ["Acné", "Points noirs", "Rougeurs", "Taches sombres", "Pores dilatés", "Teint terne / irrégulier", "Excès de sébum", "Rides & ridules", "Cernes", "Aucun", "Autre"],
+      "sensitivityLabel": "Sensibilité de la peau",
+      "sensitivityHint": "Votre peau réagit-elle facilement aux produits, changements de climat ou au stress ?",
+      "sensitivities": [
+        { "label": "Oui — j'ai la peau sensible",    "sub": "Ma peau réagit souvent : rougeurs, démangeaisons, brûlures ou boutons"         },
+        { "label": "Parfois",                         "sub": "Je réagis occasionnellement à certains produits ou changements environnementaux" },
+        { "label": "Rarement",                        "sub": "Je réagis rarement — uniquement avec des produits très agressifs"              },
+        { "label": "Non — ma peau est résistante",   "sub": "Ma peau tolère la plupart des produits et conditions"                          }
+      ]
+    },
+    "goals": {
+      "title": "Vos objectifs peau",
+      "subtitle": "Qu'est-ce que vous souhaitez améliorer ?",
+      "hint": "Choisissez tout ce qui s'applique — la plupart des gens ont 2 ou 3 objectifs en même temps. Il n'y a pas de mauvaise réponse.",
+      "goalsLabel": "Quels sont vos principaux objectifs ?",
+      "goals": ["Hydrater", "Réduire l'acné", "Uniformiser le teint", "Réduire les taches", "Calmer les irritations", "Éclat naturel", "Anti-âge", "Nettoyer les pores", "Autre"],
+      "timelineLabel": "Quand attendez-vous des résultats ?",
+      "timelineHint": "Le soin naturel demande de la constance. Soyez réaliste — plus l'engagement est long, plus les résultats sont profonds.",
+      "timelines": [
+        { "label": "2 semaines",          "sub": "Premiers résultats — hydratation visible & premier éclat"   },
+        { "label": "1 mois",              "sub": "Amélioration notable de la texture et de l'éclat"           },
+        { "label": "3 mois",              "sub": "Vraie transformation avec une routine constante"            },
+        { "label": "Long terme (6+ mois)","sub": "Habitudes durables pour une peau définitivement plus saine" }
+      ]
+    },
+    "routine": {
+      "title": "Votre routine actuelle",
+      "subtitle": "Voyons d'où vous partez",
+      "hint": "Pas besoin d'être parfait — nous construirons à partir de là où vous en êtes.",
+      "waterLabel": "Combien d'eau buvez-vous par jour ?",
+      "waterHint": "L'hydratation est le complément beauté n°1 — elle affecte directement l'éclat et la fermeté de la peau",
+      "water": [
+        { "label": "<1L",     "sub": "Moins d'1 litre — assez faible pour la santé de la peau" },
+        { "label": "1–1.5L",  "sub": "1 à 1,5 litres — modéré, peut être amélioré"            },
+        { "label": "1.5–2L",  "sub": "1,5 à 2 litres — bonne hydratation quotidienne"         },
+        { "label": ">2L",     "sub": "Plus de 2 litres — excellent pour la peau"              }
+      ],
+      "exfoliationLabel": "À quelle fréquence vous exfoliez-vous ?",
+      "exfoliationHint": "L'exfoliation élimine les cellules mortes et aide les ingrédients actifs à mieux pénétrer",
+      "exfoliation": [
+        { "label": "Jamais",                  "sub": "Je ne m'exfolie pas actuellement — je commence"               },
+        { "label": "Une fois par semaine",    "sub": "Une routine hebdomadaire légère"                              },
+        { "label": "Deux fois par semaine",   "sub": "Une habitude d'exfoliation régulière"                        },
+        { "label": "3 fois ou plus par semaine", "sub": "Exfoliation fréquente — nous surveillerons le sur-exfoliation" }
+      ],
+      "naturalLabel": "Utilisez-vous actuellement des soins naturels ?",
+      "naturalHint": "Produits naturels ou DIY à base de plantes, fruits, huiles ou argiles",
+      "natural": [
+        { "label": "Oui, régulièrement", "sub": "J'utilise des produits naturels ou DIY la plupart des jours"      },
+        { "label": "Parfois",            "sub": "Je mélange produits naturels et conventionnels"                   },
+        { "label": "Pas encore",         "sub": "Je n'ai jamais essayé les soins naturels — je commence maintenant" }
+      ]
+    },
+    "diet": {
+      "title": "Alimentation & hydratation",
+      "subtitle": "Ce que vous mangez et buvez affecte directement votre peau",
+      "hint": "Votre peau reflète votre alimentation. Cela nous aide à suggérer des recettes qui complètent votre style de vie.",
+      "dietLabel": "Comment décririez-vous votre alimentation ?",
+      "dietHint": "Sélectionnez tout ce qui s'applique",
+      "diet": ["Surtout fruits & légumes", "Équilibrée & variée", "Riche en sucre", "Riche en produits laitiers", "Fast food souvent", "Vegan", "Végétarien", "Autre"],
+      "drinksLabel": "Que buvez-vous habituellement ?",
+      "drinksHint": "Sélectionnez tout ce qui s'applique — soyez honnête, cela aide à personnaliser votre routine",
+      "drinks": ["Eau", "Thé / infusions", "Jus frais", "Café", "Boissons sucrées / sodas", "Alcool", "Smoothies", "Autre"],
+      "allergiesLabel": "Avez-vous des allergies ou intolérances alimentaires connues ?",
+      "allergiesHint": "Nous exclurons ces ingrédients de toutes vos recettes et routines",
+      "yes": "Oui", "no": "Non",
+      "digestionLabel": "Avez-vous des problèmes digestifs ?",
+      "digestionHint": "La santé intestinale et cutanée sont étroitement liées — les ballonnements et la mauvaise digestion apparaissent souvent sur la peau",
+      "digestion": [
+        { "label": "Oui",      "sub": "Ballonnements réguliers, SCI, constipation ou douleurs digestives" },
+        { "label": "Parfois",  "sub": "Inconfort occasionnel après certains repas"                        },
+        { "label": "Non",      "sub": "Ma digestion est généralement confortable et régulière"            }
+      ]
+    },
+    "safety": {
+      "title": "Vérification de sécurité",
+      "subtitle": "Quelques questions importantes pour votre sécurité",
+      "warning": "Cette application est à des fins de bien-être & éducatives — pas de conseil médical. Consultez toujours un professionnel de santé pour des préoccupations médicales.",
+      "pregnantLabel": "Êtes-vous actuellement enceinte ou allaitante ?",
+      "pregnantHint": "Certains ingrédients naturels (ex. huiles essentielles, herbes à haute dose) peuvent devoir être évités pendant la grossesse.",
+      "pregnant": [
+        { "label": "Oui — je suis enceinte ou j'allaite" },
+        { "label": "Non" }
+      ],
+      "reactionLabel": "Avez-vous déjà eu une réaction à des cosmétiques naturels ?",
+      "reactionHint": "Cela nous aide à signaler les ingrédients à haut risque dans vos recettes",
+      "reactions": [
+        { "label": "Oui — j'ai déjà réagi à des ingrédients naturels", "sub": "Nous ajouterons des signaux de sécurité aux ingrédients à haut risque" },
+        { "label": "Non — je n'ai jamais eu de réaction",              "sub": "Nous incluerons quand même des rappels de test cutané"                  }
+      ]
+    },
+    "commitment": {
+      "title": "Votre engagement",
+      "subtitle": "Aidez-nous à définir le bon rythme pour vous",
+      "hint": "Soyez réaliste — une routine que vous pouvez suivre chaque jour est bien plus puissante qu'une routine parfaite que vous abandonnez après 1 semaine.",
+      "timeLabel": "Combien de temps pouvez-vous consacrer par jour ?",
+      "timeHint": "Même 5 minutes suffisent avec une consistance quotidienne",
+      "time": [
+        { "label": "5 min / jour",   "sub": "Rapide — une action simple par session (ex. un smoothie ou un masque)"  },
+        { "label": "10 min / jour",  "sub": "Routine légère — 2 à 3 étapes simples"                                  },
+        { "label": "20 min / jour",  "sub": "Routine solide — préparer, appliquer et rincer"                         },
+        { "label": "30+ min / jour", "sub": "Rituel complet — toutes les étapes avec soin et intention"              }
+      ],
+      "complexityLabel": "Quelle complexité de recette préférez-vous ?",
+      "complexityHint": "Cela détermine l'élaboration de votre plan hebdomadaire",
+      "complexity": [
+        { "label": "Simple",          "sub": "2–3 ingrédients max, moins de 5 minutes à préparer"                  },
+        { "label": "Élaboré",         "sub": "J'aime le processus — plus d'ingrédients et d'étapes, c'est bien"    },
+        { "label": "Les deux",        "sub": "Recettes rapides en semaine, plus élaborées le week-end"             }
+      ],
+      "remindersLabel": "Activer les rappels de routine quotidiens ?",
+      "remindersHint": "Nous enverrons de douces notifications le matin, à midi et le soir pour vous rappeler",
+      "reminders": [
+        { "label": "Oui, rappelez-moi", "sub": "Notifications douces le matin, à midi et le soir" },
+        { "label": "Non merci",         "sub": "Je vérifierai l'application moi-même"             }
+      ]
+    },
+    "continue": "Continuer",
+    "back": "Retour"
+  }
 }
