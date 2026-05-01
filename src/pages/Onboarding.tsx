@@ -10,13 +10,6 @@ import StepRoutine    from '../components/onboarding/StepRoutine'
 import StepDiet       from '../components/onboarding/StepDiet'
 import StepSafety     from '../components/onboarding/StepSafety'
 import StepCommitment from '../components/onboarding/StepCommitment'
-import type { ProfileData }    from '../components/onboarding/StepProfile'
-import type { SkinData }       from '../components/onboarding/StepSkin'
-import type { GoalsData }      from '../components/onboarding/StepGoals'
-import type { RoutineData }    from '../components/onboarding/StepRoutine'
-import type { DietData }       from '../components/onboarding/StepDiet'
-import type { SafetyData }     from '../components/onboarding/StepSafety'
-import type { CommitmentData } from '../components/onboarding/StepCommitment'
 
 export default function Onboarding() {
   const navigate = useNavigate()
@@ -25,8 +18,7 @@ export default function Onboarding() {
   const next = () => setStep(s => s + 1)
   const back = () => setStep(s => s - 1)
 
-  const handleFinish = async (commitment: CommitmentData) => {
-    // Sauvegarde dans Supabase user metadata (on étendra avec une vraie table après)
+  const handleFinish = async () => {
     await supabase.auth.updateUser({
       data: { onboarding_complete: true }
     })
