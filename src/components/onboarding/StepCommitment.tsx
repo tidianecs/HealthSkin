@@ -42,31 +42,56 @@ export default function StepCommitment({ onBack, onContinue }: Props) {
   const complexityOpts = t('onboarding.commitment.complexity', { returnObjects: true }) as { label: string; sub: string }[]
   const reminderOpts   = t('onboarding.commitment.reminders',  { returnObjects: true }) as { label: string; sub: string }[]
 
-  const canContinue = time && complexity && reminders
+  const canContinue = Boolean(time && complexity && reminders)
+
+  const handleContinue = () => {
+    console.log('button clicked', { canContinue, time, complexity, reminders })
+    if (canContinue) {
+      onContinue({ time, complexity, reminders })
+    }
+  }
 
   return (
     <OnboardingLayout
       step={9} total={9}
       title={t('onboarding.commitment.title')}
       onBack={onBack}
-      onContinue={() => canContinue && onContinue({ time, complexity, reminders })}
+      onContinue={handleContinue}
       continueDisabled={!canContinue}
     >
       <div className="mt-4">
-        <h2 className="text-2xl font-extrabold text-[var(--text-primary)] mb-1">{t('onboarding.commitment.title')}</h2>
-        <p className="text-sm text-[var(--text-muted)] mb-1">{t('onboarding.commitment.subtitle')}</p>
-        <p className="text-xs text-[var(--text-muted)] mb-6">📍 {t('onboarding.commitment.hint')}</p>
+        <h2 className="text-2xl font-extrabold text-[var(--text-primary)] mb-1">
+          {t('onboarding.commitment.title')}
+        </h2>
+        <p className="text-sm text-[var(--text-muted)] mb-1">
+          {t('onboarding.commitment.subtitle')}
+        </p>
+        <p className="text-xs text-[var(--text-muted)] mb-6">
+          📍 {t('onboarding.commitment.hint')}
+        </p>
 
-        <p className="text-base font-bold text-[var(--text-primary)] mb-1">{t('onboarding.commitment.timeLabel')}</p>
-        <p className="text-xs text-[var(--text-muted)] mb-3">{t('onboarding.commitment.timeHint')}</p>
+        <p className="text-base font-bold text-[var(--text-primary)] mb-1">
+          {t('onboarding.commitment.timeLabel')}
+        </p>
+        <p className="text-xs text-[var(--text-muted)] mb-3">
+          {t('onboarding.commitment.timeHint')}
+        </p>
         <RadioList options={timeOpts} value={time} onChange={setTime} />
 
-        <p className="text-base font-bold text-[var(--text-primary)] mb-1">{t('onboarding.commitment.complexityLabel')}</p>
-        <p className="text-xs text-[var(--text-muted)] mb-3">{t('onboarding.commitment.complexityHint')}</p>
+        <p className="text-base font-bold text-[var(--text-primary)] mb-1">
+          {t('onboarding.commitment.complexityLabel')}
+        </p>
+        <p className="text-xs text-[var(--text-muted)] mb-3">
+          {t('onboarding.commitment.complexityHint')}
+        </p>
         <RadioList options={complexityOpts} value={complexity} onChange={setComplexity} />
 
-        <p className="text-base font-bold text-[var(--text-primary)] mb-1">{t('onboarding.commitment.remindersLabel')}</p>
-        <p className="text-xs text-[var(--text-muted)] mb-3">{t('onboarding.commitment.remindersHint')}</p>
+        <p className="text-base font-bold text-[var(--text-primary)] mb-1">
+          {t('onboarding.commitment.remindersLabel')}
+        </p>
+        <p className="text-xs text-[var(--text-muted)] mb-3">
+          {t('onboarding.commitment.remindersHint')}
+        </p>
         <RadioList options={reminderOpts} value={reminders} onChange={setReminders} />
       </div>
     </OnboardingLayout>

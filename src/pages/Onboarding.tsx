@@ -19,10 +19,15 @@ export default function Onboarding() {
   const back = () => setStep(s => s - 1)
 
   const handleFinish = async () => {
-    await supabase.auth.updateUser({
+    console.log('handleFinish called')
+    
+    supabase.auth.updateUser({
       data: { onboarding_complete: true }
     })
-    navigate('/scan')
+    
+    console.log('navigating to /scan')
+    navigate('/scan', { replace: true })
+    console.log('navigate called')
   }
 
   switch (step) {
@@ -34,7 +39,7 @@ export default function Onboarding() {
     case 6: return <StepRoutine    onBack={back} onContinue={next} />
     case 7: return <StepDiet       onBack={back} onContinue={next} />
     case 8: return <StepSafety     onBack={back} onContinue={next} />
-    case 9: return <StepCommitment onBack={back} onContinue={handleFinish} />
+    case 9: return <StepCommitment onBack={back} onContinue={() => handleFinish()} />
     default: return null
   }
 }

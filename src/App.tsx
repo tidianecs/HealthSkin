@@ -7,6 +7,7 @@ import Auth         from './pages/Auth'
 import AuthCallback from './pages/AuthCallback'
 import Onboarding   from './pages/Onboarding'
 import Dashboard    from './pages/Dashboard'
+import Scan         from './pages/Scan'
 
 export default function App() {
   const [session, setSession] = useState<Session | null>(null)
@@ -46,22 +47,22 @@ export default function App() {
         {/* Public */}
         <Route path="/" element={<Home />} />
 
-        {/* Auth callback — Google OAuth redirect ici */}
+        {/* Auth callback */}
         <Route path="/auth/callback" element={<AuthCallback />} />
 
-        {/* Auth — si déjà connecté, redirige selon onboarding */}
+        {/* Auth */}
         <Route
           path="/auth"
           element={
             !session
               ? <Auth />
-              : onboardingDone
-                ? <Navigate to="/dashboard" replace />
-                : <Navigate to="/onboarding" replace />
+              : !onboardingDone
+                ? <Navigate to="/onboarding" replace />
+                : <Navigate to="/dashboard" replace />
           }
         />
 
-        {/* Onboarding — seulement si connecté ET onboarding pas fait */}
+        {/* Onboarding */}
         <Route
           path="/onboarding"
           element={
@@ -73,7 +74,17 @@ export default function App() {
           }
         />
 
-        {/* Dashboard — seulement si connecté ET onboarding fait */}
+        {/* Scan — accessible librement si connecté */}
+        <Route
+          path="/scan"
+          element={
+            !session
+              ? <Navigate to="/auth" replace />
+              : <Scan />
+          }
+        />
+
+        {/* Dashboard */}
         <Route
           path="/dashboard"
           element={
@@ -82,16 +93,6 @@ export default function App() {
               : !onboardingDone
                 ? <Navigate to="/onboarding" replace />
                 : <Dashboard />
-          }
-        />
-
-        {/* Scan — après onboarding */}
-        <Route
-          path="/scan"
-          element={
-            !session
-              ? <Navigate to="/auth" replace />
-              : <Dashboard />
           }
         />
       </Routes>
